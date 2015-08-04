@@ -133,18 +133,19 @@ module.exports = function(transform)
 								}
 								else
 								{
-
 									suboutput[value.name] = record[key];
 									used++;
 								}
 							}
-							if (key === groupMap.require)
-							{
-								require_found = true;
-							}
+						}
+						console.log(key, groupMap.require);
+						if (key === groupMap.require)
+						{
+							require_found = true;
 						}
 					}
 				});
+				console.log(groupMap.require, require_found, used);
 				if ((groupMap.require && require_found && used > 0) || (!groupMap.require && used > 0))
 				{
 					if (!output[groupMap.name])

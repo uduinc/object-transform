@@ -1,6 +1,6 @@
 {
 	"name": "object-transform",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Convert javascript object according to mapping rules",
 	"author": "Geoffrey Corey <geoffrey.w.corey@gmail.com> and contributors",
 	"repository":
