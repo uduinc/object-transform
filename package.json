@@ -1,24 +1,33 @@
 {
-  "name": "object-transform",
-  "version": "0.0.1",
-  "description": "Convert javascript object according to mapping rules",
+	"name": "object-transform",
+	"version": "0.0.1",
+	"description": "Convert javascript object according to mapping rules",
+	"author": "Geoffrey Corey <geoffrey.w.corey@gmail.com> and contributors",
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/uduinc/object-transform.git"
+	},
+	"homepage": "https://github.com/uduinc/object-transform",
 	"keywords": [
 		"data-mapper",
 		"transform",
 		"translate"
 	],
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/*-test.js"
-  },
-  "author": "Geoffrey Corey",
-  "license": "MIT",
-  "dependencies": {
-    "lodash": "^3.10.0"
-  },
-	"devDependancies": {
-		"assert": "^0.10.3",
-		"mocha": "^2.2.5",
-		"should": "^4.6.1"
+	"main": "index.js",
+	"scripts":
+	{
+		"test": "mocha -R mocha-better-spec-reporter --check-leaks ./test/*.test.js ./test/**/*.test.js"
+	},
+	"license": "MIT",
+	"dependencies":
+	{
+		"lodash": "^3.10.0"
+	},
+	"devDependencies":
+	{
+		"should": "latest",
+		"mocha": "latest",
+		"mocha-better-spec-reporter": "latest"
 	}
 }
